@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DBCFC0A1D30E39200390209 /* SwiftGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBCFC091D30E39200390209 /* SwiftGif.swift */; };
+		5DBCFC0C1D34487C00390209 /* SwiftGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBCFC0B1D34487C00390209 /* SwiftGif.swift */; };
+		5DEE1B651D307B3C00C02011 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEE1B641D307B3C00C02011 /* AppDelegate.swift */; };
+		5DEE1B671D307B3C00C02011 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEE1B661D307B3C00C02011 /* ViewController.swift */; };
+		5DEE1B6A1D307B3C00C02011 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DEE1B681D307B3C00C02011 /* Main.storyboard */; };
+		5DEE1B6C1D307B3C00C02011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DEE1B6B1D307B3C00C02011 /* Assets.xcassets */; };
+		5DEE1B6F1D307B3C00C02011 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DEE1B6D1D307B3C00C02011 /* LaunchScreen.storyboard */; };
+		5DEE1B7D1D307B7500C02011 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEE1B7C1D307B7500C02011 /* KeyboardViewController.swift */; };
+		5DEE1B811D307B7500C02011 /* parrotboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5DEE1B7A1D307B7500C02011 /* parrotboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5DEE1B8A1D308B5900C02011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DEE1B891D308B5900C02011 /* Assets.xcassets */; };
+		5DEE1B8E1D30BEF700C02011 /* parrotkeyboardview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DEE1B8D1D30BEF700C02011 /* parrotkeyboardview.xib */; settings = {ASSET_TAGS = (NextTag, ); }; };
+		C12821AC685B215F22A5719A /* Pods_parrotKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA1F504875512A0D19211601 /* Pods_parrotKeyboard.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DEE1B7F1D307B7500C02011 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DEE1B591D307B3B00C02011 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DEE1B791D307B7500C02011;
+			remoteInfo = parrotboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5DEE1B851D307B7500C02011 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5DEE1B811D307B7500C02011 /* parrotboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1373DCC6CFD6556460519271 /* Pods-parrotKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parrotKeyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-parrotKeyboard/Pods-parrotKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		5D30147D1D346A990001BE80 /* parrotboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = parrotboard.entitlements; sourceTree = "<group>"; };
+		5D30147E1D346AC10001BE80 /* parrotKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = parrotKeyboard.entitlements; sourceTree = "<group>"; };
+		5DBCFC091D30E39200390209 /* SwiftGif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGif.swift; sourceTree = "<group>"; };
+		5DBCFC0B1D34487C00390209 /* SwiftGif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGif.swift; sourceTree = "<group>"; };
+		5DEE1B611D307B3B00C02011 /* parrotKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parrotKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DEE1B641D307B3C00C02011 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DEE1B661D307B3C00C02011 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5DEE1B691D307B3C00C02011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DEE1B6B1D307B3C00C02011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DEE1B6E1D307B3C00C02011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DEE1B701D307B3C00C02011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DEE1B7A1D307B7500C02011 /* parrotboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = parrotboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DEE1B7C1D307B7500C02011 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		5DEE1B7E1D307B7500C02011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DEE1B891D308B5900C02011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DEE1B8D1D30BEF700C02011 /* parrotkeyboardview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = parrotkeyboardview.xib; sourceTree = "<group>"; };
+		5DEE1B8F1D30C4DE00C02011 /* SwiftGIF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftGIF.framework; path = "Pods/../build/Debug-iphoneos/SwiftGIF.framework"; sourceTree = "<group>"; };
+		5DEE1B911D30C50800C02011 /* SwiftGIF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftGIF.framework; path = "Pods/../build/Debug-iphoneos/SwiftGIF.framework"; sourceTree = "<group>"; };
+		5DEE1B951D30C68600C02011 /* Gifu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gifu.framework; path = "Pods/../build/Debug-iphoneos/Gifu.framework"; sourceTree = "<group>"; };
+		5DEE1B971D30C93400C02011 /* Gifu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gifu.framework; path = "Pods/../build/Release-iphoneos/Gifu.framework"; sourceTree = "<group>"; };
+		5DEE1BA51D30CE0F00C02011 /* SwiftGIF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftGIF.framework; path = "Pods/../build/Debug-iphoneos/SwiftGIF.framework"; sourceTree = "<group>"; };
+		5DEE1BAB1D30D15400C02011 /* Gifu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gifu.framework; path = "Pods/../build/Debug-iphoneos/Gifu.framework"; sourceTree = "<group>"; };
+		5DEE1BAF1D30D1BF00C02011 /* Gifu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gifu.framework; path = "Pods/../build/Debug-iphoneos/Gifu.framework"; sourceTree = "<group>"; };
+		5DEE1BB31D30D2D900C02011 /* FLAnimatedImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLAnimatedImage.framework; path = "Pods/../build/Debug-iphoneos/FLAnimatedImage.framework"; sourceTree = "<group>"; };
+		5DEE1BBB1D30DB0600C02011 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		BFADD5814360B359F0C90C74 /* Pods-parrotKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parrotKeyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-parrotKeyboard/Pods-parrotKeyboard.release.xcconfig"; sourceTree = "<group>"; };
+		CA1F504875512A0D19211601 /* Pods_parrotKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_parrotKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DEE1B5E1D307B3B00C02011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12821AC685B215F22A5719A /* Pods_parrotKeyboard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DEE1B771D307B7500C02011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DEE1B581D307B3B00C02011 = {
+			isa = PBXGroup;
+			children = (
+				5DEE1B631D307B3B00C02011 /* parrotKeyboard */,
+				5DEE1B7B1D307B7500C02011 /* parrotboard */,
+				5DEE1B621D307B3B00C02011 /* Products */,
+				7CA644321971D53C11522487 /* Pods */,
+				F06219B38390AD92DEC83DF3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5DEE1B621D307B3B00C02011 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DEE1B611D307B3B00C02011 /* parrotKeyboard.app */,
+				5DEE1B7A1D307B7500C02011 /* parrotboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DEE1B631D307B3B00C02011 /* parrotKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5D30147E1D346AC10001BE80 /* parrotKeyboard.entitlements */,
+				5DBCFC091D30E39200390209 /* SwiftGif.swift */,
+				5DEE1B641D307B3C00C02011 /* AppDelegate.swift */,
+				5DEE1B661D307B3C00C02011 /* ViewController.swift */,
+				5DEE1B681D307B3C00C02011 /* Main.storyboard */,
+				5DEE1B6D1D307B3C00C02011 /* LaunchScreen.storyboard */,
+				5DEE1B6B1D307B3C00C02011 /* Assets.xcassets */,
+				5DEE1B701D307B3C00C02011 /* Info.plist */,
+				5DEE1BBB1D30DB0600C02011 /* Bridging-Header.h */,
+			);
+			path = parrotKeyboard;
+			sourceTree = "<group>";
+		};
+		5DEE1B7B1D307B7500C02011 /* parrotboard */ = {
+			isa = PBXGroup;
+			children = (
+				5D30147D1D346A990001BE80 /* parrotboard.entitlements */,
+				5DEE1B8D1D30BEF700C02011 /* parrotkeyboardview.xib */,
+				5DEE1B7C1D307B7500C02011 /* KeyboardViewController.swift */,
+				5DEE1B7E1D307B7500C02011 /* Info.plist */,
+				5DEE1B891D308B5900C02011 /* Assets.xcassets */,
+				5DBCFC0B1D34487C00390209 /* SwiftGif.swift */,
+			);
+			path = parrotboard;
+			sourceTree = "<group>";
+		};
+		7CA644321971D53C11522487 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1373DCC6CFD6556460519271 /* Pods-parrotKeyboard.debug.xcconfig */,
+				BFADD5814360B359F0C90C74 /* Pods-parrotKeyboard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F06219B38390AD92DEC83DF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DEE1BB31D30D2D900C02011 /* FLAnimatedImage.framework */,
+				5DEE1BAF1D30D1BF00C02011 /* Gifu.framework */,
+				5DEE1BAB1D30D15400C02011 /* Gifu.framework */,
+				5DEE1BA51D30CE0F00C02011 /* SwiftGIF.framework */,
+				5DEE1B971D30C93400C02011 /* Gifu.framework */,
+				5DEE1B951D30C68600C02011 /* Gifu.framework */,
+				5DEE1B911D30C50800C02011 /* SwiftGIF.framework */,
+				5DEE1B8F1D30C4DE00C02011 /* SwiftGIF.framework */,
+				CA1F504875512A0D19211601 /* Pods_parrotKeyboard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DEE1B601D307B3B00C02011 /* parrotKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DEE1B731D307B3C00C02011 /* Build configuration list for PBXNativeTarget "parrotKeyboard" */;
+			buildPhases = (
+				C83E8D4687F275A4A1510FE2 /* Check Pods Manifest.lock */,
+				5DEE1B5D1D307B3B00C02011 /* Sources */,
+				5DEE1B5E1D307B3B00C02011 /* Frameworks */,
+				5DEE1B5F1D307B3B00C02011 /* Resources */,
+				5DEE1B851D307B7500C02011 /* Embed App Extensions */,
+				A11AE415D411DFFCEA164311 /* Embed Pods Frameworks */,
+				C0E66674A389E90A51BDAEAD /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DEE1B801D307B7500C02011 /* PBXTargetDependency */,
+			);
+			name = parrotKeyboard;
+			productName = parrotKeyboard;
+			productReference = 5DEE1B611D307B3B00C02011 /* parrotKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5DEE1B791D307B7500C02011 /* parrotboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DEE1B821D307B7500C02011 /* Build configuration list for PBXNativeTarget "parrotboard" */;
+			buildPhases = (
+				5DEE1B761D307B7500C02011 /* Sources */,
+				5DEE1B771D307B7500C02011 /* Frameworks */,
+				5DEE1B781D307B7500C02011 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = parrotboard;
+			productName = parrotboard;
+			productReference = 5DEE1B7A1D307B7500C02011 /* parrotboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DEE1B591D307B3B00C02011 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+					NextTag,
+				);
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Canella, Patrick";
+				TargetAttributes = {
+					5DEE1B601D307B3B00C02011 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = L4PAALEQ2D;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					5DEE1B791D307B7500C02011 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = L4PAALEQ2D;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 5DEE1B5C1D307B3B00C02011 /* Build configuration list for PBXProject "parrotKeyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DEE1B581D307B3B00C02011;
+			productRefGroup = 5DEE1B621D307B3B00C02011 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DEE1B601D307B3B00C02011 /* parrotKeyboard */,
+				5DEE1B791D307B7500C02011 /* parrotboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DEE1B5F1D307B3B00C02011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DEE1B6F1D307B3C00C02011 /* LaunchScreen.storyboard in Resources */,
+				5DEE1B6C1D307B3C00C02011 /* Assets.xcassets in Resources */,
+				5DEE1B6A1D307B3C00C02011 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DEE1B781D307B7500C02011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DEE1B8A1D308B5900C02011 /* Assets.xcassets in Resources */,
+				5DEE1B8E1D30BEF700C02011 /* parrotkeyboardview.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A11AE415D411DFFCEA164311 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-parrotKeyboard/Pods-parrotKeyboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0E66674A389E90A51BDAEAD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-parrotKeyboard/Pods-parrotKeyboard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C83E8D4687F275A4A1510FE2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DEE1B5D1D307B3B00C02011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DBCFC0A1D30E39200390209 /* SwiftGif.swift in Sources */,
+				5DEE1B671D307B3C00C02011 /* ViewController.swift in Sources */,
+				5DEE1B651D307B3C00C02011 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DEE1B761D307B7500C02011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DBCFC0C1D34487C00390209 /* SwiftGif.swift in Sources */,
+				5DEE1B7D1D307B7500C02011 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DEE1B801D307B7500C02011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DEE1B791D307B7500C02011 /* parrotboard */;
+			targetProxy = 5DEE1B7F1D307B7500C02011 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5DEE1B681D307B3C00C02011 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DEE1B691D307B3C00C02011 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5DEE1B6D1D307B3C00C02011 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DEE1B6E1D307B3C00C02011 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DEE1B711D307B3C00C02011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DEE1B721D307B3C00C02011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DEE1B741D307B3C00C02011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1373DCC6CFD6556460519271 /* Pods-parrotKeyboard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = parrotKeyboard/parrotKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
+				);
+				INFOPLIST_FILE = parrotKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				New_Setting = "";
+				PRODUCT_BUNDLE_IDENTIFIER = pcanella.parrotKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				df = "";
+			};
+			name = Debug;
+		};
+		5DEE1B751D307B3C00C02011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFADD5814360B359F0C90C74 /* Pods-parrotKeyboard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = parrotKeyboard/parrotKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
+				);
+				INFOPLIST_FILE = parrotKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				New_Setting = "";
+				PRODUCT_BUNDLE_IDENTIFIER = pcanella.parrotKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				df = "";
+			};
+			name = Release;
+		};
+		5DEE1B831D307B7500C02011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = parrotboard/parrotboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(SRCROOT)/**",
+				);
+				INFOPLIST_FILE = parrotboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pcanella.parrotKeyboard.parrotboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5DEE1B841D307B7500C02011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = parrotboard/parrotboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(SRCROOT)/**",
+				);
+				INFOPLIST_FILE = parrotboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pcanella.parrotKeyboard.parrotboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DEE1B5C1D307B3B00C02011 /* Build configuration list for PBXProject "parrotKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DEE1B711D307B3C00C02011 /* Debug */,
+				5DEE1B721D307B3C00C02011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DEE1B731D307B3C00C02011 /* Build configuration list for PBXNativeTarget "parrotKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DEE1B741D307B3C00C02011 /* Debug */,
+				5DEE1B751D307B3C00C02011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DEE1B821D307B7500C02011 /* Build configuration list for PBXNativeTarget "parrotboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DEE1B831D307B7500C02011 /* Debug */,
+				5DEE1B841D307B7500C02011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DEE1B591D307B3B00C02011 /* Project object */;
+}

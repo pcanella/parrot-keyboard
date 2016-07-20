@@ -1,0 +1,6 @@
+framework module Pods_parrotKeyboard {
+  umbrella header "Pods-parrotKeyboard-umbrella.h"
+
+  export *
+  module * { export * }
+}
