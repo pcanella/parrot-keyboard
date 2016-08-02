@@ -10,11 +10,13 @@ import UIKit
 
 class KeyboardViewController: UIInputViewController {
     var parrotView: UIView!
-
+    @IBOutlet var keyboardDivView: UIView!
+    @IBOutlet var leadingMarginConstraint: NSLayoutConstraint!
+    
     @IBOutlet var nextKeyboardButton: UIButton!
     @IBOutlet var fastParrotBtn: UIButton!
     @IBOutlet var parrottest: UIImageView!
-    
+    @IBOutlet var keyboardBtn: UIButton!
     var allParrots = NSMutableArray();
     
     @IBAction func backspacePressed(btn: UIButton) {
@@ -30,14 +32,12 @@ class KeyboardViewController: UIInputViewController {
         UIPasteboard.generalPasteboard().setData(data, forPasteboardType: "com.compuserve.gif")
     }
     
-    @IBOutlet var centerView: UIView!
-
     override func updateViewConstraints() {
         super.updateViewConstraints()
-    
+        
         // Add custom view sizing constraints here
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadInterface();
@@ -45,17 +45,16 @@ class KeyboardViewController: UIInputViewController {
     
     func iterateOverAllBtns(){
         let a = NSMutableArray();
-        // Add all buttons to array
-        for case let button as UIButton in self.parrotView.subviews {
-            if (button.titleLabel!.text != "Next" && button.titleLabel!.text != "🔙"){
+         //Add all buttons to array
+        
+        for case let button as UIButton in keyboardDivView.subviews {
+            if (button.titleLabel!.text != "Next Keyboard" && button.titleLabel!.text != "🔙"){
                 a.addObject(button);
             }
-            
-            
         }
         
         for (var i = 0; i < a.count; i++){
-           addProperImagesToButtons(a[i] as! UIButton, int: i);
+            addProperImagesToButtons(a[i] as! UIButton, int: i);
         }
     }
     
@@ -77,45 +76,44 @@ class KeyboardViewController: UIInputViewController {
         let itmName = items[int].componentsSeparatedByString(".gif")[0];
         setButton(thisBtn, title: itmName, idx: int);
     }
-
+    
     
     func setButton(btn: UIButton, title: String, idx: Int){
-            let parrotGif = UIImage.gifWithName(title)
+        let parrotGif = UIImage.gifWithName(title)
         
-            btn.setTitle("", forState: .Normal);
-            btn.tag = idx;
-            //btn.frame = CGRectMake(btn.frame.origin.x, btn.frame.origin.y, parrotGif!.size.width, parrotGif!.size.height);
-            btn.setImage(parrotGif, forState: UIControlState.Normal)
+        btn.setTitle("", forState: .Normal);
+        btn.tag = idx;
+        btn.setBackgroundImage(parrotGif, forState: UIControlState.Normal)
     }
     
     func loadInterface() {
         // load the nib file
         let parrotNib = UINib(nibName: "parrotkeyboardview", bundle: nil)
         // instantiate the view
-        parrotView = parrotNib.instantiateWithOwner(self, options: nil)[0] as! UIView
+        self.parrotView = parrotNib.instantiateWithOwner(self, options: nil)[0] as! UIView
         
+        print(self.parrotView.frame.width);
         // add the interface to the main view
-        view.addSubview(parrotView)
+        view.addSubview(self.parrotView)
         
         // copy the background color
         view.backgroundColor = parrotView.backgroundColor
-        
         nextKeyboardButton.addTarget(self, action: "advanceToNextInputMode", forControlEvents: .TouchUpInside)
         iterateOverAllBtns()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated
     }
-
+    
     override func textWillChange(textInput: UITextInput?) {
         // The app is about to change the document's contents. Perform any preparation here.
     }
-
+    
     override func textDidChange(textInput: UITextInput?) {
         // The app has just changed the document's contents, the document context has been updated.
-    
+        
         var textColor: UIColor
         let proxy = self.textDocumentProxy
         if proxy.keyboardAppearance == UIKeyboardAppearance.Dark {
@@ -127,5 +125,5 @@ class KeyboardViewController: UIInputViewController {
     }
     
     
-
+    
 }

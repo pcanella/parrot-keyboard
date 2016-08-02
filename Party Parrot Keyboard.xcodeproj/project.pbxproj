@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D33B6581D4191AC001B5CC5 /* Montserrat in Resources */ = {isa = PBXBuildFile; fileRef = 5D33B6571D4191AC001B5CC5 /* Montserrat */; };
 		5DBCFC0A1D30E39200390209 /* SwiftGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBCFC091D30E39200390209 /* SwiftGif.swift */; };
 		5DBCFC0C1D34487C00390209 /* SwiftGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBCFC0B1D34487C00390209 /* SwiftGif.swift */; };
 		5DEE1B651D307B3C00C02011 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEE1B641D307B3C00C02011 /* AppDelegate.swift */; };
@@ -49,9 +50,10 @@
 		1373DCC6CFD6556460519271 /* Pods-parrotKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parrotKeyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-parrotKeyboard/Pods-parrotKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
 		5D30147D1D346A990001BE80 /* parrotboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = parrotboard.entitlements; sourceTree = "<group>"; };
 		5D30147E1D346AC10001BE80 /* parrotKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = parrotKeyboard.entitlements; sourceTree = "<group>"; };
+		5D33B6571D4191AC001B5CC5 /* Montserrat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Montserrat; sourceTree = "<group>"; };
 		5DBCFC091D30E39200390209 /* SwiftGif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGif.swift; sourceTree = "<group>"; };
 		5DBCFC0B1D34487C00390209 /* SwiftGif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGif.swift; sourceTree = "<group>"; };
-		5DEE1B611D307B3B00C02011 /* parrotKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parrotKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DEE1B611D307B3B00C02011 /* Party Parrot Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Party Parrot Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DEE1B641D307B3C00C02011 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DEE1B661D307B3C00C02011 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5DEE1B691D307B3C00C02011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,7 +111,7 @@
 		5DEE1B621D307B3B00C02011 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5DEE1B611D307B3B00C02011 /* parrotKeyboard.app */,
+				5DEE1B611D307B3B00C02011 /* Party Parrot Keyboard.app */,
 				5DEE1B7A1D307B7500C02011 /* parrotboard.appex */,
 			);
 			name = Products;
@@ -118,6 +120,7 @@
 		5DEE1B631D307B3B00C02011 /* parrotKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				5D33B6571D4191AC001B5CC5 /* Montserrat */,
 				5D30147E1D346AC10001BE80 /* parrotKeyboard.entitlements */,
 				5DBCFC091D30E39200390209 /* SwiftGif.swift */,
 				5DEE1B641D307B3C00C02011 /* AppDelegate.swift */,
@@ -172,9 +175,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5DEE1B601D307B3B00C02011 /* parrotKeyboard */ = {
+		5DEE1B601D307B3B00C02011 /* Party Parrot Keyboard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5DEE1B731D307B3C00C02011 /* Build configuration list for PBXNativeTarget "parrotKeyboard" */;
+			buildConfigurationList = 5DEE1B731D307B3C00C02011 /* Build configuration list for PBXNativeTarget "Party Parrot Keyboard" */;
 			buildPhases = (
 				C83E8D4687F275A4A1510FE2 /* Check Pods Manifest.lock */,
 				5DEE1B5D1D307B3B00C02011 /* Sources */,
@@ -189,9 +192,9 @@
 			dependencies = (
 				5DEE1B801D307B7500C02011 /* PBXTargetDependency */,
 			);
-			name = parrotKeyboard;
+			name = "Party Parrot Keyboard";
 			productName = parrotKeyboard;
-			productReference = 5DEE1B611D307B3B00C02011 /* parrotKeyboard.app */;
+			productReference = 5DEE1B611D307B3B00C02011 /* Party Parrot Keyboard.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5DEE1B791D307B7500C02011 /* parrotboard */ = {
@@ -245,7 +248,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5DEE1B5C1D307B3B00C02011 /* Build configuration list for PBXProject "parrotKeyboard" */;
+			buildConfigurationList = 5DEE1B5C1D307B3B00C02011 /* Build configuration list for PBXProject "Party Parrot Keyboard" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -258,7 +261,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5DEE1B601D307B3B00C02011 /* parrotKeyboard */,
+				5DEE1B601D307B3B00C02011 /* Party Parrot Keyboard */,
 				5DEE1B791D307B7500C02011 /* parrotboard */,
 			);
 		};
@@ -270,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DEE1B6F1D307B3C00C02011 /* LaunchScreen.storyboard in Resources */,
+				5D33B6581D4191AC001B5CC5 /* Montserrat in Resources */,
 				5DEE1B6C1D307B3C00C02011 /* Assets.xcassets in Resources */,
 				5DEE1B6A1D307B3C00C02011 /* Main.storyboard in Resources */,
 			);
@@ -486,7 +490,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				New_Setting = "";
 				PRODUCT_BUNDLE_IDENTIFIER = pcanella.parrotKeyboard;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Party Parrot Keyboard";
 				PROVISIONING_PROFILE = "";
 				df = "";
 			};
@@ -511,7 +515,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				New_Setting = "";
 				PRODUCT_BUNDLE_IDENTIFIER = pcanella.parrotKeyboard;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Party Parrot Keyboard";
 				PROVISIONING_PROFILE = "";
 				df = "";
 			};
@@ -562,7 +566,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5DEE1B5C1D307B3B00C02011 /* Build configuration list for PBXProject "parrotKeyboard" */ = {
+		5DEE1B5C1D307B3B00C02011 /* Build configuration list for PBXProject "Party Parrot Keyboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5DEE1B711D307B3C00C02011 /* Debug */,
@@ -571,7 +575,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5DEE1B731D307B3C00C02011 /* Build configuration list for PBXNativeTarget "parrotKeyboard" */ = {
+		5DEE1B731D307B3C00C02011 /* Build configuration list for PBXNativeTarget "Party Parrot Keyboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5DEE1B741D307B3C00C02011 /* Debug */,
